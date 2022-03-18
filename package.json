@@ -1,0 +1,30 @@
+{
+	"type": "module",
+	"name": "mhstatus",
+	"version": "1.0.0",
+	"description": "a cmdline tool to check the status of minehut servers",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "arczen#7561",
+	"license": "ISC",
+	"dependencies": {
+		"boxen": "^6.2.1",
+		"chalk": "^5.0.0",
+		"chalk-animation": "^1.3.0",
+		"cli": "^1.0.1",
+		"clui": "^0.3.6",
+		"figlet": "^1.5.2",
+		"gradient-string": "^2.0.0"
+	},
+	"bin": {
+		"mhstatus": "index.js",
+		"mh": "index.js",
+		"mhs": "index.js"
+	},
+	"keywords": [
+		"minehut",
+		"cli"
+	]
+}
