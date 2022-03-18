@@ -100,6 +100,9 @@ if (resp.server.online == false) {
 } else {
 	last_online = " ";
 }
+if (resp.server.rawPlan != "") {
+	resp.server.rawPlan = "(" + resp.server.rawPlan + ")";
+}
 const online = resp.server.online ? chalk.green.bold("online") : chalk.red.bold("offline");
 const visibility = resp.server.visibility ? chalk.green.bold("public") : chalk.red.bold("private");
 const credits_per_day = Math.ceil(resp.server.credits_per_day);
@@ -126,7 +129,7 @@ ${chalk.cyan.bold(resp.server.playerCount + "/" + resp.server.maxPlayers + " pla
 created on: ${chalk.blue.bold(new Date(resp.server.creation).toUTCString())}
 ${chalk.blue.bold(">>")} ${relative_creation_date}
 server type: ${chalk.blue.bold(resp.server.server_version_type)}
-server plan: ${chalk.blue.bold(resp.server.activeServerPlan)} ${chalk.cyan.bold(`(${resp.server.rawPlan})`)}
+server plan: ${chalk.blue.bold(resp.server.activeServerPlan)} ${chalk.cyan.bold(resp.server.rawPlan)}
 categories: ${chalk.blue.bold(categories)}
 credit cost: ${chalk.blue.bold(credits_per_day)} credits per day
 connected servers: 
