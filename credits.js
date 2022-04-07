@@ -1,8 +1,6 @@
 import figlet from "figlet";
-import gradient from "gradient-string";
 function credits() {
-	console.log(
-		gradient.pastel(`
+	console.log(`
 	${figlet.textSync("mhstatus")}
 
 	tools used:

@@ -1,7 +1,7 @@
 {
 	"type": "module",
 	"name": "mhstatus",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "a cmdline tool to check the status of minehut servers",
 	"main": "index.js",
 	"scripts": {
@@ -16,7 +16,7 @@
 		"cli": "^1.0.1",
 		"clui": "^0.3.6",
 		"figlet": "^1.5.2",
-		"gradient-string": "^2.0.0"
+		"mhstatus": "^1.0.0"
 	},
 	"bin": {
 		"mhstatus": "index.js",
