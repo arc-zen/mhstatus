@@ -69,6 +69,7 @@ const resp = await fetch(`https://api.minehut.com/server/${args[0]}?byName=true`
 	.then(spinner.message("formatting data..."));
 if (resp.ok == false) {
 	console.error("Server not found");
+	spinner.stop();
 }
 if (resp.server.connectedServers.length != 0) {
 	let i = 1;
