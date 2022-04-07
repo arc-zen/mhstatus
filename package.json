@@ -1,7 +1,7 @@
 {
 	"type": "module",
 	"name": "mhstatus",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "a cmdline tool to check the status of minehut servers",
 	"main": "index.js",
 	"scripts": {
@@ -12,7 +12,6 @@
 	"dependencies": {
 		"boxen": "^6.2.1",
 		"chalk": "^5.0.0",
-		"chalk-animation": "^1.3.0",
 		"cli": "^1.0.1",
 		"clui": "^0.3.6",
 		"figlet": "^1.5.2",
